@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background: #000;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    height: 4em;
+    background: #2b1923;
+    text-align: center;
+}
+
+header img{
+    width: 64px;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: .4em 0 0 0;
+}
+
+.conteiner h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: .2em;
+}
+
+.conteiner h5 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: .2em;
+    font-weight: 200;
+    background: transparent;
+}
+
+.links {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    padding: .2em 0 .2em 1em;
+    margin-bottom: 1em;
+}
+
+.tg, .inst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    margin-bottom: .2em;
+}
+
+.links img {
+    width: 30px; 
+    padding: .2em;
+    background-color: #2b1923;
+    margin-right: .7em;
+}
+
+.links a{
+    text-decoration: none;
+    color: #5b17c7;
+    background-color: #000000;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.links p{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.main {
+    display: flex;
+    text-align: center;
+}
+
+.download-bar {
+    width:380px;
+    height:60px;
+  }
+
+  .text {
+    
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+ .main .download-bar p, .main .download-bar span {
+    font-size: 25px;
+    color:rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+  }
+  
+  #replacep{
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .download-bar .kacekagen-protsem {
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(to right,rgb(250, 164, 231),rgb(173, 12, 165),rgb(144, 11, 197),rgb(82, 92, 230),rgb(21, 78, 236),rgb(1, 19, 177));
+    margin-top: 10px;
+    background-size: 454px 5px;
+    border-radius: 12px;
+    
+  }
+
+  .kacekagen-spin {
+    animation: loading 9s ease-in-out forwards;
+  }
+  
+  @keyframes loading {
+    to {
+    width:100%; 
+    }
+  }
+
+  video::-webkit-media-controls {
+    display:none !important;
+  }
+
+
+/* С…Р°РєРµСЂ РєРѕРґ */
+.codeHack {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+ #vidHack{
+    width: 30px;
+    pointer-events: none;
+    display: block;
+    z-index: -100;
+}
+
+.hidBlock {
+    background: #FFFFFF;
+}
+
+
+.btn-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    position: relative;
+}
+
+.btn-cont h3{
+    color: #d3d3d3;
+    margin-right: 23px;
+}
+
+.codeHack button {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    padding: .1em .8em;
+    border: 1px solid #ffffff;
+    background-color: #ffffff; /* Измените цвет фона на белый (#ffffff) */
+    border-radius: 20px;
+    transition: .2s;
+    cursor: pointer;
+    font-family: "Roboto";
+}
+.codeHack button {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    padding: .1em .8em;
+    border: 1px solid #ffffff;
+    background-color: #30ff41;
+    border-radius: 20px;
+    transition: .2s;
+    cursor: pointer;
+    font-family: "Roboto";
+    width: 200px; /* Добавлено: установите нужную ширину */
+    height: 50px; /* Добавлено: установите нужную высоту */
+}
+
+.codeHack button:hover {
+    color: #3ff028;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+    transition: .3s;
+}
+
+
+.loader {
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #073001; /* Blue */
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+@media (max-width: 540px) {
+
+    .conteiner h1 {
+        margin-bottom: 1em;
+    }
+
+    .conteiner h3 {
+        margin-bottom: .3em;
+    }
+
+    .conteiner h5 {
+        margin-bottom: .2em;
+        
+    }
+
+    .text {
+        margin-bottom: 4px;
+      }
+
+    .download-bar {
+        width:330px;
+        height:60px;
+        margin-bottom: 10px;
+      }
+
+    .codeHack #vidHack{
+        width: 350px;
+        margin-bottom: 23px;
+    }
+
+    .codeHack button {
+        font-size: 30px;
+        padding: .1em .8em;
+    }
+
+}
+
+.contvide {
+    
+}
+
+
+@media (max-width: 414px) {
+    .conteiner h3 {
+        font-size: 30px;
+    }
+    .conteiner h1 {
+        margin-bottom: 1em;
+        
+    }
+
+    .conteiner h3 {
+        margin-bottom: .3em;
+    }
+
+    .conteiner h5 {
+        margin-bottom: .2em;
+        font-size: 20px;
+    }
+
+    .text {
+        margin-bottom: 4px;
+      }
+
+    .download-bar {
+        width:380px;
+        height:60px;
+        margin-bottom: 10px;
+      }
+
+    .codeHack #vidHack{
+        width: 380px;
+        margin-bottom: 1px;
+    }
+
+    .codeHack button {
+        font-size: 30px;
+        padding: .1em .8em;
+    }
+
+}
+@media (max-width: 414px) and (max-height: 736px){
+    .conteiner h3 {
+        font-size: 15px;
+    }
+
+    .conteiner h3 {
+        margin-bottom: .2em;
+    }
+
+    .conteiner h5 {
+        margin-bottom: .2em;
+        font-size: 10px;
+    }
+
+    .text {
+        margin-bottom: 4px;
+      }
+
+    .download-bar {
+        width:355px;
+        height:60px;
+        margin-bottom: 2px;
+      }
+
+    .codeHack #vidHack{
+        width: 355px;
+        margin-bottom: 0px;
+    }
+
+    .codeHack button {
+        font-size: 20px;
+        padding: .1em .8em;
+    }
+    .loader {
+        width: 12px;
+        height: 12px;
+    }
+
+    .download-bar .text p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .download-bar #replacep {
+        font-size: 12px;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .conteiner h3 {
+        font-size: 15px;
+    }
+
+    .conteiner h5 {
+       font-size: 10px;
+        
+    }
+
+    .link p, .link a{
+        font-size: 10px;
+    }
+
+    .download-bar {
+        width:320px;
+        margin-bottom: 2px;
+      }
+
+    .codeHack #vidHack{
+        width: 320px;
+        margin-bottom: 1px;
+    }
+
+    .codeHack button {
+        font-size: 15px;
+
+    }
+
+    .loader {
+        
+        width: 8px;
+        height: 8px;
+    }
+
+}
+@media (max-width: 360px) {
+
+    .conteiner h3 {
+        font-size: 30px;
+    }
+    .codeHack button {
+        font-size: 30px;
+
+    }
+
+    .loader {
+        
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width: 350px) {
+
+    .conteiner h3 {
+        font-size: 30px;
+    }
+
+    .conteiner h5 {
+       font-size: 20px;
+        
+    }
+
+    .link p, .link a{
+        font-size: 20px;
+    }
+
+    .download-bar {
+        width:300px;
+      }
+
+    .codeHack #vidHack{
+        width: 300px;
+        margin-bottom: 23px;
+    }
+
+    .codeHack button {
+        
+    }
+
+}
+
+@media (max-width: 325px) {
+
+    .download-bar {
+        width:280px;
+      }
+
+    .codeHack #vidHack{
+        width: 280px;
+        margin-bottom: 23px;
+    }
+}
+
+@media (max-width: 320px) and (max-height: 568px){
+    .conteiner h3 {
+        font-size: 10px;
+    }
+
+    .conteiner h3 {
+        margin-bottom: .2em;
+    }
+
+    .conteiner h5 {
+        margin-bottom: .2em;
+        font-size: 7px;
+    }
+
+    .links {
+        margin-bottom: 1px;
+    }
+
+    .text {
+        margin-bottom: 1px;
+      }
+
+      .link p, .link a{
+        font-size: 8px;
+    }
+
+    .download-bar {
+        width:270px;
+        height:60px;
+        margin-bottom: 1px;
+      }
+
+    .main .download-bar .text p {
+        font-size: 13px;
+        margin: 0;
+    }
+    .main .download-bar #replacep {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .codeHack #vidHack{
+        width: 270px;
+        margin-bottom: 0px;
+    }
+
+    .codeHack button {
+        font-size: 20px;
+        padding: .1em .8em;
+    }
+    .loader {
+        width: 12px;
+        height: 12px;
+    }
+
+    .download-bar .text p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .download-bar #replacep {
+        font-size: 12px;
+        margin: 0;
+    }
+
+}
+
+/* 
+@media (min-device-width: 320px) and (max-device-width: 568px) {
+
+    .conteiner h3{
+        font-size: 15px;
+        margin: 0 0 2px 0;
+    }
+
+    .conteiner h5{
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .links .link p, .links .link a{
+        font-size: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .download-bar .text p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .download-bar #replacep {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .download-bar .kacekagen-protsem{
+        margin: 0;
+        padding: 0;
+    }
+
+    .download-bar {
+        width:250px;
+      }
+
+    .codeHack #vidHack{
+        width: 250px;
+        margin: 0;
+        margin-bottom: 1px;
+    }
+    .codeHack button {
+     font-size: 20px;   
+    }
+
+    .links {
+        
+        margin-bottom: .1em;
+    }
+} */
+
+
+@media (max-width: 305px) {
+
+    .download-bar {
+        width:280px;
+      }
+
+    .codeHack #vidHack{
+        width: 280px;
+        margin-bottom: 23px;
+    }
+
+
+}
+
+@media (max-width: 280px) {
+
+    .download-bar {
+        width:260px;
+      }
+
+    .codeHack #vidHack{
+        width: 260px;
+        margin-bottom: 23px;
+    }
+
+
+}
+
+@media (max-width: 260px) {
+
+    .download-bar {
+        width:240px;
+      }
+
+    .codeHack #vidHack{
+        width: 240px;
+        margin-bottom: 23px;
+    }
+
+
+}
