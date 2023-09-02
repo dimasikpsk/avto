@@ -372,12 +372,10 @@ header img{
         
     }
 
-    .link p, .link a{
-        font-size: 10px;
     }
 
     .download-bar {
-        width:320px;
+        width:20px;
         margin-bottom: 2px;
       }
 
